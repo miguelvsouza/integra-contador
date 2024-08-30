@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch --env-file .env src/server.ts"
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && tsx watch --env-file .env src/server.ts"
   },
   "keywords": [],
   "author": "Miguel Souza | Qibz",
@@ -15,7 +15,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
-    "@fastify/jwt": "^8.0.1",
+    "axios": "^1.7.5",
     "fastify": "^4.28.1",
     "fastify-type-provider-zod": "^2.0.0",
     "zod": "^3.23.8"
